@@ -103,8 +103,11 @@ src/
 
 ### Compilación Manual (Terminal)
 ```bash
-# Compilar
-javac -d bin src/module-info.java src/co/edu/konradlorenz/**/*.java
+# Compilar (Linux/macOS)
+find src -name "*.java" | xargs javac -d bin
+
+# Compilar (Windows PowerShell)
+Get-ChildItem -Path src -Recurse -Filter *.java | ForEach-Object { $_.FullName } | javac -d bin @args
 
 # Ejecutar
 java -p bin -m krello/co.edu.konradlorenz.controller.AplMain
@@ -163,8 +166,8 @@ java -p bin -m krello/co.edu.konradlorenz.controller.AplMain
 │  ┌─────────┐  ┌────────┐  ┌───────┐  ┌─────────────────┐   │
 │  │ Persona │  │Tablero │  │ Lista │  │      Tarea      │   │
 │  ├─────────┤  └────────┘  └───────┘  └─────────────────┘   │
-│  │Admin    │                                                │
-│  │Colabor  │                                                │
+│  │  Admin  │                                                │
+│  │  Colab  │                                                │
 │  └─────────┘                                                │
 └─────────────────────────────────────────────────────────────┘
 ```
