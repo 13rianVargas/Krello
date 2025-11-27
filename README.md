@@ -178,12 +178,10 @@ java -p bin -m krello/co.edu.konradlorenz.controller.AplMain
 
 Este proyecto fue desarrollado por estudiantes de **Ingeniería de Sistemas** de la **Universidad Konrad Lorenz**:
 
-| Nombre | GitHub |
-|--------|--------|
-| **Alexander Chacon** | - |
-| **Sharon Cruz** | - |
-| **Nicoll Durán** | - |
-| **Brian Vargas** | [@13rianVargas](https://github.com/13rianVargas) |
+- **Alexander Chacon**
+- **Sharon Cruz**
+- **Nicoll Durán**
+- **Brian Vargas**
 
 ---
 
